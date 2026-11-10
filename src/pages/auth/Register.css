@@ -1,0 +1,1147 @@
+/* =========================================================
+   HOUK — REGISTER
+   ========================================================= */
+
+.register-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 48% 52%;
+  background: #f7f4ed;
+  overflow: hidden;
+}
+
+/* =========================================================
+   LADO ESQUERDO
+   ========================================================= */
+
+.register-showcase {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+
+  background: #183b56;
+  color: #ffffff;
+}
+
+.register-background {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.register-circle {
+  position: absolute;
+
+  border: 1px solid rgba(142, 197, 255, 0.16);
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+.register-circle-one {
+  width: 620px;
+  height: 620px;
+
+  top: -270px;
+  right: -350px;
+}
+
+.register-circle-two {
+  width: 470px;
+  height: 470px;
+
+  left: -300px;
+  bottom: -270px;
+
+  border-color: rgba(166, 70, 72, 0.22);
+}
+
+.register-grid {
+  position: absolute;
+  inset: 0;
+
+  opacity: 0.07;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.2) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.2) 1px,
+      transparent 1px
+    );
+
+  background-size: 44px 44px;
+
+  mask-image: linear-gradient(
+    to bottom right,
+    black,
+    transparent 75%
+  );
+
+  -webkit-mask-image: linear-gradient(
+    to bottom right,
+    black,
+    transparent 75%
+  );
+}
+
+.register-showcase-content {
+  position: relative;
+  z-index: 2;
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 42px 64px;
+}
+
+/* =========================================================
+   BOTÃO VOLTAR
+   ========================================================= */
+
+.back-login {
+  width: fit-content;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 0;
+
+  border: 0;
+  outline: none;
+
+  background: transparent;
+
+  color: rgba(255, 255, 255, 0.55);
+
+  font-size: 12px;
+  font-weight: 600;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.back-login:hover {
+  color: #8ec5ff;
+  transform: translateX(-2px);
+}
+
+.back-login:focus-visible {
+  outline: 2px solid #8ec5ff;
+  outline-offset: 5px;
+  border-radius: 4px;
+}
+
+/* =========================================================
+   MARCA
+   ========================================================= */
+
+.register-brand {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  margin-top: 38px;
+
+  font-family: 'Manrope', sans-serif;
+
+  font-size: 25px;
+  font-weight: 800;
+
+  letter-spacing: -0.8px;
+}
+
+.register-logo {
+  width: 43px;
+  height: 43px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border: 1.5px solid #8ec5ff;
+  border-radius: 12px;
+
+  color: #8ec5ff;
+
+  font-family: 'Manrope', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+/* =========================================================
+   APRESENTAÇÃO
+   ========================================================= */
+
+.register-presentation {
+  max-width: 520px;
+
+  margin: auto 0;
+}
+
+.register-label {
+  display: inline-flex;
+
+  margin-bottom: 21px;
+
+  color: #8ec5ff;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 1.8px;
+}
+
+.register-presentation h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: 'Manrope', sans-serif;
+
+  font-size: clamp(40px, 4vw, 61px);
+  line-height: 1.06;
+
+  font-weight: 600;
+
+  letter-spacing: -2.8px;
+}
+
+.register-presentation h1 strong {
+  display: block;
+
+  color: #8ec5ff;
+
+  font-weight: 800;
+}
+
+.register-presentation > p {
+  max-width: 470px;
+
+  margin-top: 24px;
+
+  color: rgba(255, 255, 255, 0.66);
+
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+/* =========================================================
+   BENEFÍCIOS
+   ========================================================= */
+
+.register-benefits {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+
+  margin-top: 34px;
+}
+
+.register-benefit {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.benefit-check {
+  width: 28px;
+  height: 28px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background: rgba(142, 197, 255, 0.1);
+
+  color: #8ec5ff;
+}
+
+.register-benefit span {
+  color: rgba(255, 255, 255, 0.68);
+
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* =========================================================
+   RODAPÉ ESQUERDO
+   ========================================================= */
+
+.register-showcase-footer {
+  color: rgba(255, 255, 255, 0.35);
+
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   ÁREA DIREITA
+   ========================================================= */
+
+.register-section {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 45px 50px;
+
+  overflow-y: auto;
+}
+
+.register-container {
+  width: 100%;
+  max-width: 570px;
+
+  margin: auto;
+}
+
+/* =========================================================
+   CABEÇALHO
+   ========================================================= */
+
+.register-header {
+  margin-bottom: 28px;
+}
+
+.register-eyebrow {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #a64648;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 1.7px;
+}
+
+.register-header h2 {
+  margin: 0;
+
+  color: #183b56;
+
+  font-family: 'Manrope', sans-serif;
+
+  font-size: 34px;
+  line-height: 1.15;
+
+  font-weight: 800;
+
+  letter-spacing: -1.3px;
+}
+
+.register-header p {
+  margin-top: 10px;
+
+  color: #687582;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   TIPO DE CONTA
+   ========================================================= */
+
+.account-type {
+  margin-bottom: 23px;
+}
+
+.account-type-label {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #183b56;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.account-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 11px;
+}
+
+.account-option {
+  position: relative;
+
+  min-height: 75px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  padding: 13px;
+
+  border: 1px solid #dfe5e9;
+  border-radius: 11px;
+
+  background: #ffffff;
+
+  color: #17212b;
+
+  text-align: left;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.account-option:hover:not(:disabled) {
+  border-color: #b9d9f7;
+
+  transform: translateY(-1px);
+
+  box-shadow: 0 5px 15px rgba(24, 59, 86, 0.05);
+}
+
+.account-option:focus-visible {
+  border-color: #8ec5ff;
+
+  box-shadow:
+    0 0 0 3px rgba(142, 197, 255, 0.18);
+}
+
+.account-option.active {
+  border-color: #8ec5ff;
+
+  background: #fafdff;
+
+  box-shadow:
+    0 0 0 3px rgba(142, 197, 255, 0.12);
+}
+
+.account-option:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.account-option:disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.account-option-icon {
+  width: 38px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background: #dceeff;
+
+  color: #183b56;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.account-option.active .account-option-icon {
+  background: #8ec5ff;
+  color: #183b56;
+}
+
+.account-option-text {
+  min-width: 0;
+  padding-right: 18px;
+}
+
+.account-option-text strong {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #183b56;
+
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.account-option-text span {
+  display: block;
+
+  color: #687582;
+
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.selected-check {
+  position: absolute;
+
+  top: 8px;
+  right: 8px;
+
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #183b56;
+
+  color: #ffffff;
+}
+
+/* =========================================================
+   FORMULÁRIO
+   ========================================================= */
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 17px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 14px;
+}
+
+.register-field {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.register-field label {
+  color: #183b56;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.register-field input {
+  width: 100%;
+  height: 48px;
+
+  padding: 0 14px;
+
+  border: 1px solid #dfe5e9;
+  border-radius: 9px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #17212b;
+
+  font-size: 13px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.register-field input::placeholder {
+  color: #a4adb4;
+}
+
+.register-field input:hover:not(:disabled) {
+  border-color: #c7d1d8;
+}
+
+.register-field input:focus {
+  border-color: #8ec5ff;
+
+  box-shadow:
+    0 0 0 4px rgba(142, 197, 255, 0.16);
+}
+
+.register-field input:disabled {
+  cursor: not-allowed;
+
+  background: #f1f3f4;
+
+  color: #7c858c;
+
+  opacity: 0.75;
+}
+
+/* =========================================================
+   SENHA
+   ========================================================= */
+
+.register-password {
+  position: relative;
+  width: 100%;
+}
+
+.register-password input {
+  padding-right: 48px;
+}
+
+.register-password-toggle {
+  position: absolute;
+
+  right: 9px;
+  top: 50%;
+
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transform: translateY(-50%);
+
+  padding: 0;
+
+  border: 0;
+  border-radius: 6px;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #687582;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+.register-password-toggle:hover:not(:disabled) {
+  color: #183b56;
+  background: #f1f5f8;
+}
+
+.register-password-toggle:focus-visible {
+  color: #183b56;
+
+  box-shadow:
+    0 0 0 2px rgba(142, 197, 255, 0.3);
+}
+
+.register-password-toggle:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* =========================================================
+   MENSAGEM DE ERRO
+   ========================================================= */
+
+.register-error {
+  width: 100%;
+
+  padding: 13px 15px;
+
+  border: 1px solid #e7bfc0;
+  border-radius: 9px;
+
+  background: #f5dddd;
+
+  color: #873638;
+
+  font-size: 11px;
+  line-height: 1.6;
+
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.register-error::before {
+  content: 'Atenção';
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #873638;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+/* =========================================================
+   MENSAGEM DE SUCESSO
+   ========================================================= */
+
+.register-success {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  padding: 13px 15px;
+
+  border: 1px solid #b9d8ca;
+  border-radius: 9px;
+
+  background: #edf7f1;
+
+  color: #3f8068;
+}
+
+.success-icon {
+  width: 27px;
+  height: 27px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 1px;
+
+  border-radius: 50%;
+
+  background: #3f8068;
+
+  color: #ffffff;
+}
+
+.register-success strong {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #326b55;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.register-success span {
+  display: block;
+
+  color: #4e7565;
+
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   BOTÃO PRINCIPAL
+   ========================================================= */
+
+.register-button {
+  width: 100%;
+  height: 51px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  margin-top: 2px;
+
+  border: 0;
+  border-radius: 9px;
+
+  outline: none;
+
+  background: #183b56;
+
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.register-button:hover:not(:disabled) {
+  background: #102c42;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 10px 22px rgba(24, 59, 86, 0.18);
+}
+
+.register-button:active:not(:disabled) {
+  transform: translateY(0);
+
+  box-shadow:
+    0 5px 12px rgba(24, 59, 86, 0.12);
+}
+
+.register-button:focus-visible {
+  box-shadow:
+    0 0 0 4px rgba(142, 197, 255, 0.25);
+}
+
+.register-button:disabled {
+  cursor: not-allowed;
+
+  opacity: 0.65;
+
+  transform: none;
+
+  box-shadow: none;
+}
+
+/* =========================================================
+   LOGIN
+   ========================================================= */
+
+.register-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 5px;
+
+  margin-top: 21px;
+
+  color: #687582;
+
+  font-size: 11px;
+}
+
+.register-login button {
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  color: #a64648;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  outline: none;
+}
+
+.register-login button:hover:not(:disabled) {
+  text-decoration: underline;
+}
+
+.register-login button:focus-visible {
+  text-decoration: underline;
+
+  box-shadow:
+    0 2px 0 #a64648;
+}
+
+.register-login button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* =========================================================
+   TERMOS
+   ========================================================= */
+
+.register-terms {
+  max-width: 420px;
+
+  margin: 17px auto 0;
+
+  color: #9aa3aa;
+
+  font-size: 9px;
+  line-height: 1.6;
+
+  text-align: center;
+}
+
+/* =========================================================
+   MARCA MOBILE
+   ========================================================= */
+
+.register-mobile-brand {
+  display: none;
+}
+
+/* =========================================================
+   TABLET / TELAS MÉDIAS
+   ========================================================= */
+
+@media (max-width: 1100px) {
+  .register-page {
+    grid-template-columns: 44% 56%;
+  }
+
+  .register-showcase-content {
+    padding: 38px 42px;
+  }
+
+  .register-section {
+    padding: 38px 40px;
+  }
+
+  .register-presentation h1 {
+    font-size: clamp(38px, 4vw, 52px);
+  }
+}
+
+@media (max-width: 950px) {
+  .register-page {
+    grid-template-columns: 42% 58%;
+  }
+
+  .register-showcase-content {
+    padding: 34px;
+  }
+
+  .register-section {
+    padding: 34px;
+  }
+
+  .register-presentation h1 {
+    font-size: 43px;
+
+    letter-spacing: -2px;
+  }
+
+  .register-presentation > p {
+    font-size: 13px;
+  }
+
+  .register-container {
+    max-width: 540px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 800px) {
+  .register-page {
+    min-height: 100vh;
+
+    display: block;
+
+    overflow: visible;
+  }
+
+  .register-showcase {
+    display: none;
+  }
+
+  .register-section {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding: 34px 24px;
+
+    overflow: visible;
+  }
+
+  .register-container {
+    width: 100%;
+    max-width: 520px;
+
+    margin: 0 auto;
+  }
+
+  .register-mobile-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 42px;
+
+    color: #183b56;
+
+    font-family: 'Manrope', sans-serif;
+
+    font-size: 23px;
+    font-weight: 800;
+
+    letter-spacing: -0.7px;
+  }
+
+  .register-mobile-logo {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border: 1.5px solid #183b56;
+    border-radius: 11px;
+
+    color: #183b56;
+
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+  }
+
+  .register-header h2 {
+    font-size: 30px;
+  }
+}
+
+/* =========================================================
+   MOBILE PEQUENO
+   ========================================================= */
+
+@media (max-width: 560px) {
+  .register-section {
+    padding: 28px 20px;
+  }
+
+  .register-mobile-brand {
+    margin-bottom: 34px;
+  }
+
+  .register-header {
+    margin-bottom: 24px;
+  }
+
+  .register-header h2 {
+    font-size: 28px;
+
+    letter-spacing: -1px;
+  }
+
+  .register-header p {
+    font-size: 12px;
+  }
+
+  .account-type {
+    margin-bottom: 20px;
+  }
+
+  .account-options {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+
+  .account-option {
+    min-height: 70px;
+  }
+
+  .register-form {
+    gap: 15px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .register-field input {
+    height: 47px;
+  }
+
+  .register-button {
+    height: 50px;
+  }
+}
+
+/* =========================================================
+   CELULAR MUITO PEQUENO
+   ========================================================= */
+
+@media (max-width: 380px) {
+  .register-section {
+    padding: 24px 16px;
+  }
+
+  .register-mobile-brand {
+    margin-bottom: 30px;
+
+    font-size: 21px;
+  }
+
+  .register-mobile-logo {
+    width: 37px;
+    height: 37px;
+
+    font-size: 17px;
+  }
+
+  .register-header h2 {
+    font-size: 25px;
+  }
+
+  .register-eyebrow {
+    font-size: 10px;
+  }
+
+  .account-option {
+    padding: 11px;
+  }
+
+  .account-option-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .register-error,
+  .register-success {
+    padding: 11px 12px;
+  }
+}
+
+/* =========================================================
+   REDUÇÃO DE MOVIMENTO
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .register-page *,
+  .register-page *::before,
+  .register-page *::after {
+    scroll-behavior: auto !important;
+
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
